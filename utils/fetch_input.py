@@ -9,9 +9,9 @@ try:
     if day < 0 or day > 24:
         raise ValueError()
 
-    request = requests.get(f"https://adventofcode.com/2022/day/{day}/input", 
+    request = requests.get(f"https://adventofcode.com/2022/day/{day}/input",
         headers={
-            'cookie':f"session={session_cookie}"
+            'cookie':f"session={session_cookie}" # this isn't due to expire until 4th Jan 23
         }
     )
 
