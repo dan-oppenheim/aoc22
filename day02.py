@@ -12,8 +12,7 @@ combos = {
 }
 
 
-with open("input/day2.txt") as input_file:
-    print(sum(combos[line.strip()] for line in input_file))
+print(sum(combos[line.strip()] for line in open("input/day2.txt")))
 
 
 decrypted_combos = {
@@ -29,5 +28,4 @@ decrypted_combos = {
     "": 0
 }
 
-with open("input/day2.txt") as input_file:
-    print(sum(decrypted_combos[line.strip()] for line in input_file))
+print(sum(decrypted_combos[line.strip()] for line in open("input/day2.txt")))
